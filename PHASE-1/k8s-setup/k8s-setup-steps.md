@@ -10,7 +10,7 @@ sudo kubeadm init \
   --apiserver-advertise-address=<PRIVATE-IP> \
   --pod-network-cidr=172.17.0.0/16
 ```
-### 4. Configure a pod network in the cluster, for that run script calico.yaml given in k8s-setup folder.
+### 4. Configure a pod network in the cluster
   1- Install the Tigera Operator and custom resource definitions.
 ``` bash
 kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.31.3/manifests/operator-crds.yaml
