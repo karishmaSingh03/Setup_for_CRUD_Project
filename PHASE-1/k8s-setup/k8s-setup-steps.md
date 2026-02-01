@@ -86,12 +86,18 @@ kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.31.3
 ```bash  
  watch kubectl get tigerastatus
 ```
-### 5: Verify cluster
+
+### 5. Verify if network is up and we have calico pods as well
 
 ```bash
 kubectl get nodes
 kubectl get pods -A
 ```
+### 6. run script for installing package (step1) on worker nodes 
+### 7. Run join command thhat we had after kubeadm init command on Master node to join worker nodes in cluster.
+### 8. Verify pods on Master nodes
+
+
 
 
 
