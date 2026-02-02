@@ -65,7 +65,7 @@ sudo kubeadm config images pull
 ```bash 
 sudo kubeadm init \
   --apiserver-advertise-address=<PRIVATE-IP> \
-  --pod-network-cidr=172.17.0.0/16
+  --pod-network-cidr=192.168.0.0/16
 ```
 ### 4. Configure a pod network in the cluster
   1- Install the Tigera Operator and custom resource definitions.
