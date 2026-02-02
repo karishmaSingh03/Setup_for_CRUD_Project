@@ -96,10 +96,23 @@ kubectl get pods -A
 ### 6. run script for installing package (step1) on worker nodes 
 ### 7. Run join command thhat we had after kubeadm init command on Master node to join worker nodes in cluster.
 ### 8. Verify pods on Master nodes
-
-
-
-
+### 9. Now we can set up kubeaudit to scan the k8s cluster:
+i) Go to below link
+```bash
+https://github.com/shopify/kubeaudit/releases
+```
+then run below command
+```bash
+wget https://github.com/Shopify/kubeaudit/releases/download/v0.22.2/kubeaudit_0.22.2_linux_amd64.tar.gz
+```
+then extract the downloaded zip
+```bash
+tar -xvzf kubeaudit_0.22.2_linux_amd64.tar.gz
+```
+next 
+```bash
+sudo mv kubeaudit /usr/local/bin
+```
 
 
 
